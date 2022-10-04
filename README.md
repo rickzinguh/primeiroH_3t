@@ -1,7 +1,6 @@
 # Terceiro Trimestre
 
 ## Identificação
-Jesus - Nr. 50
-
+Gustavo - nmr 10
 ## Conteúdo
 HTML, CSS e javaScript
