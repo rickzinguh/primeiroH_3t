@@ -1,7 +1,7 @@
 # Terceiro Trimestre
 
-## identificação
-Gustavo Henrique Da Silva Pereira - Nr. 10
+## Identificação
+Jesus - Nr. 50
 
-## conteudo
-html, css e javascript
+## Conteúdo
+HTML, CSS e javaScript
