@@ -4,7 +4,7 @@
 
 var tabuada = 8;
 
-function meChame(Gustavo){
+function meChame(nome){
     document.write("<h1>Tabuada do " + tabuada + "</h1>");
     document.write(tabuada + " x 1 = "+(tabuada*1)+"<br>");
     document.write(tabuada + " x 2 = "+(tabuada*2)+"<br>");
@@ -16,7 +16,7 @@ function meChame(Gustavo){
     document.write(tabuada + " x 8 = "+(tabuada*8)+"<br>");
     document.write(tabuada + " x 9 = "+(tabuada*9)+"<br>");
     document.write(tabuada + " x 10 = "+(tabuada*10)+"<br");
-    document.write("Feita por " + Gustavo);
+    document.write("Feita por " + nome);
     
 }
 
@@ -28,7 +28,7 @@ function escreva(){
 
 function quadrado(){
     for(var i = 2; i < 101; i++){
-        document.write("O Quadrado de " + i + " é " + (i*i)+ "<br>")
+        document.write("O Quadrado de " + i + " é " + (i*i)+ "<br>");
     }
 
 }
@@ -36,12 +36,18 @@ function total(){
     let valor = document.getElementById("val").value;
     let juros = document.getElementById("ju").value;
     let mes = document.getElementById("mes").value;
+
     let resultado = 0;
     for(let i = 1; i <= mes; i++){
         resultado = valor * (1+(juros/100));
         valor = resultado;
     }
     
+    if(!Number(valor)){
+        alert("O valor deve ser um número.");
+        return
+    }
+
     document.write("O Resultado é " + resultado);
 }
 
@@ -51,6 +57,10 @@ function soma(){
     let n3 = document.getElementById("n3").value;
     let r = Number(n1) + Number(n2) + Number(n3);
     document.getElementById("resultado").innerHTML = r;
+    if(!Number(resultado)){
+        alert("O valor deve ser um número.");
+        return
+    }
 }
 function média(){
     let n1 = document.getElementById("n1").value;
@@ -58,6 +68,11 @@ function média(){
     let n3 = document.getElementById("n3").value;
     let r = (Number(n1) + Number(n2) + Number(n3))/3;
     document.getElementById("resultado").innerHTML = r;
+    if(!Number(resultado)){
+        alert("O valor deve ser um número.");
+        return
+    }
+    
 }
 function necessário(){
     let n1 = document.getElementById("n1").value;
@@ -65,4 +80,11 @@ function necessário(){
     let n3 = document.getElementById("n3").value;
     let r = 180 - (Number(n1) + Number(n2) + Number(n3));
     document.getElementById("resultado").innerHTML = r;
+    if(r <= 0){ 
+        document.getElementById("resultado").innerHTML = 0;
+        }
+    if(!Number(resultado)){
+        alert("O valor deve ser um número.");
+        return
+        }
 }
