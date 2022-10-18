@@ -4,7 +4,7 @@
 
 var tabuada = 8;
 
-function meChame(nome){
+function meChame(Gustavo){
     document.write("<h1>Tabuada do " + tabuada + "</h1>");
     document.write(tabuada + " x 1 = "+(tabuada*1)+"<br>");
     document.write(tabuada + " x 2 = "+(tabuada*2)+"<br>");
@@ -16,7 +16,7 @@ function meChame(nome){
     document.write(tabuada + " x 8 = "+(tabuada*8)+"<br>");
     document.write(tabuada + " x 9 = "+(tabuada*9)+"<br>");
     document.write(tabuada + " x 10 = "+(tabuada*10)+"<br");
-    document.write("Feita por " + nome);
+    document.write("Feita por " + Gustavo);
     
 }
 
