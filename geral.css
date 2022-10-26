@@ -1,30 +1,38 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro H</title>
-    <script src="estudo.js"></script>
-    <link rel="stylesheet" href="geral.css">
-</head>
-<body>
-   <div class="calculadora">
+.calculadora {
+    padding: 10px;
+    background: rgb(175, 94, 94);
+    width: 200px;
+    border-radius: 20px;
+}
+.listaMensal {
+    padding: 10px;
+    background: rgb(233, 183, 183);
+    width: 200px;
+    border-radius: 20px;
+}
+.calculadora input {
+    background: black;
+    color: white;
+    border-radius: 15px;
+    height: 25px;
+}
+.spResul {
+    background: black;
+    color: yellow;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+}
 
-    <div class="spResul">
-        <span id="resultado">Total: 0,00</span><br>
-    </div>
-
-    Valor: <input id="val" type="text"><br>
-    Juros: <input id="ju" type="text"><br>
-    Meses: <input id="mes" type="text"><br>
-    <button id="btnCalc" onclick="total()">Enviar</button>
-</div>
-
-<div class="listaMensal">
-    <span id="meses">Mês a Mês</span>
-</div>
-   
-    
-</body>
-</html>
+#btnCalc {
+    width: 50px;
+    padding: 5px;
+    background: rgb(79, 148, 88);
+    margin-top: 15px;
+    border-radius: 10px;
+}
+#btnCalc:hover {
+    background: rgb(44, 53, 45);
+    color: white;
+    cursor: pointer;
+}
